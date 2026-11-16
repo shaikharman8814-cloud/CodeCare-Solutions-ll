@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeCare Solutions — Websites &amp; Apps That Get You Customers</title>
+<meta name="description" content="Websites and apps for growing businesses, built in Bangalore. Free homepage concept in 24 hours, fixed prices, and ongoing care after launch.">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CodeCare Solutions — Websites &amp; Apps That Get You Customers">
+<meta property="og:description" content="A free homepage concept in 24 hours. A live product in three weeks. Quiet support after launch.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='1' y='1' width='38' height='38' rx='11' fill='%23fff' stroke='%23EA460F' stroke-width='1.6'/%3E%3Cpath d='M15.5 12.5 9.5 20l6 7.5M24.5 12.5l6 7.5-6 7.5' fill='none' stroke='%23EA460F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CodeCare Solutions",
+  "description": "Websites and apps for growing businesses, designed and built in Bangalore, with ongoing handling after launch.",
+  "email": "hellocodecaresolutions@gmail.com",
+  "areaServed": "India",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design and development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile app development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website and app handling" } }
+  ]
+}
+</script>
+<style>
+/* tokens & base */
+:root{
+  --ink:#101010;--ink-soft:#3D3D3D;--muted:#6E6E6E;
+  --primary:#EA460F;--primary-dark:#C93A0B;--accent:#FF7A3D;--accent-soft:#FFEDE3;
+  --paper:#fff;--surface:#FAF7F2;--surface-2:#F3ECE4;
+  --line:rgba(17,17,17,.12);--line-strong:rgba(17,17,17,.22);
+  --radius:24px;--shadow:0 28px 70px -38px rgba(17,17,17,.4);--shadow-sm:0 12px 28px -20px rgba(17,17,17,.35);
+  --container:1180px;--header-h:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+h1,h2,h3,h4,p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid rgba(234,70,15,.75);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent);color:var(--ink)}
+.container{width:min(100% - 40px,var(--container));margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px}
+.skip:focus{left:16px}
+.icon{width:20px;height:20px;flex:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* type & shared */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--primary)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--accent)}
+.section{padding:96px 0}
+.section-title{font-family:'Archivo',sans-serif;font-size:clamp(32px,4vw,48px);line-height:1.04;letter-spacing:-.04em;font-weight:700;margin-top:16px}
+.section-sub{max-width:590px;margin-top:16px;font-size:16.5px;line-height:1.7;color:var(--muted)}
+.section-head.center{text-align:center;margin-inline:auto}
+.section-head.center .eyebrow{justify-content:center}
+.section-head.center .section-sub{margin-inline:auto}
+[id]{scroll-margin-top:96px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border:1px solid transparent;border-radius:12px;font-size:14.5px;font-weight:600;line-height:1.2;white-space:nowrap;transition:background-color .18s,border-color .18s,color .18s,transform .18s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-dark)}
+.btn-outline{border-color:var(--line-strong);background:#fff;color:var(--ink)}
+.btn-outline:hover{border-color:var(--primary);background:var(--surface)}
+.btn-sm{min-height:40px;padding:0 16px;border-radius:10px;font-size:13px}
+.btn-block{width:100%}
+.text-link{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--primary);transition:gap .18s}
+.text-link:hover{gap:10px}
+.link-button{font-size:13px;font-weight:600;color:var(--primary);text-decoration:underline;text-underline-offset:3px;padding:6px}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.site-header.scrolled{border-color:var(--line);box-shadow:0 8px 30px -28px rgba(17,17,17,.5)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:var(--header-h)}
+.logo{display:inline-flex;align-items:center;gap:10px;flex:none}
+.logo-mark{width:36px;height:36px;color:var(--primary)}
+.logo-text{font-family:'Archivo',sans-serif;font-size:15px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.logo-text small{display:block;font-family:'Inter',sans-serif;font-size:8.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav-desktop{display:flex;align-items:center;gap:2px}
+.nav-desktop a{padding:9px 13px;border-radius:8px;font-size:13.5px;font-weight:500;color:var(--ink-soft);transition:background-color .15s,color .15s}
+.nav-desktop a:hover{background:var(--surface);color:var(--ink)}
+.header-actions{display:flex;align-items:center;gap:10px;flex:none}
+.menu-toggle{display:none;width:42px;height:42px;place-items:center;border:1px solid var(--line-strong);border-radius:10px;color:var(--ink)}
+.menu-toggle .icon{width:20px;height:20px}
+.mobile-nav{display:none;border-top:1px solid var(--line);background:#fff;padding:10px 0 18px}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:12px 2px;font-size:15.5px;font-weight:500;border-bottom:1px solid var(--line)}
+.mobile-nav a:last-of-type{border-bottom:0}
+.mobile-nav a.btn{display:flex;justify-content:center;margin-top:14px;padding:0 22px;border-bottom:0;font-size:14.5px;border-radius:12px}
+.menu-toggle .close-icon{display:none}
+.menu-toggle[aria-expanded="true"] .menu-icon{display:none}
+.menu-toggle[aria-expanded="true"] .close-icon{display:block}
+
+@media(max-width:960px){
+  .nav-desktop,.header-actions .btn-outline{display:none}
+  .menu-toggle{display:grid}
+}
+@media(max-width:640px){
+  .header-actions .btn-primary{display:none}
+  :root{--header-h:68px}
+  .logo-text{font-size:14px}
+}
+
+/* hero */
+.hero{position:relative;padding:68px 0 76px;overflow:clip}
+.hero::before{content:"";position:absolute;z-index:0;right:-10%;top:6%;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(234,70,15,.17),rgba(234,70,15,0) 68%);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:11.5px;font-weight:600;letter-spacing:.02em;color:var(--ink-soft)}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(234,70,15,.22)}
+.hero h1{font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,6vw,76px);line-height:.99;letter-spacing:-.05em;margin-top:22px;max-width:640px}
+.hero h1 .mark{position:relative;color:var(--primary);white-space:nowrap}
+.hero h1 .mark::after{content:"";position:absolute;left:0;right:0;bottom:.045em;height:.11em;border-radius:99px;background:var(--accent);opacity:.55}
+.hero-sub{margin-top:22px;max-width:540px;font-size:17.5px;line-height:1.68;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.trust-line{display:flex;flex-wrap:wrap;gap:7px 18px;margin-top:20px;font-size:12.5px;color:var(--ink-soft)}
+.trust-line span{display:inline-flex;align-items:center;gap:6px}
+.trust-line .icon{width:15px;height:15px;color:var(--primary)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:520px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+.hero-stat{padding-right:18px}
+.hero-stat+.hero-stat{padding-left:22px;border-left:1px solid var(--line)}
+.hero-stat strong{display:block;font-family:'Archivo',sans-serif;font-size:26px;line-height:1;letter-spacing:-.035em;color:var(--primary)}
+.hero-stat span{display:block;margin-top:6px;font-size:10.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+
+.worldwide{display:flex;align-items:center;gap:14px;margin-top:28px}
+.flags{display:flex;flex:none}
+.flag{width:31px;height:31px;border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:0 2px 8px rgba(17,17,17,.2);margin-left:-8px;background:#fff}
+.flag:first-child{margin-left:0}
+.flag svg{display:block;width:100%;height:100%}
+.worldwide-text{font-size:12px;line-height:1.5;color:var(--muted)}
+.worldwide-text strong{display:block;font-family:'Archivo',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+@media(max-width:520px){.worldwide{gap:11px}.worldwide-text{font-size:11.5px}}
+
+/* hero visual */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:500px}
+.hero-glow{position:absolute;inset:8% 2% 2%;border-radius:50%;background:radial-gradient(circle at 55% 45%,rgba(234,70,15,.3),rgba(234,70,15,0) 66%)}
+.browser{position:relative;z-index:1;width:100%;max-width:548px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.browser-bar{display:flex;align-items:center;gap:12px;height:42px;padding:0 14px;background:var(--surface);border-bottom:1px solid var(--line)}
+.browser-dots{display:flex;gap:5px}
+.browser-dots i{width:7px;height:7px;border-radius:50%;background:rgba(17,17,17,.16)}
+.browser-url{flex:1;text-align:center;font-size:9.5px;letter-spacing:.08em;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:6px;padding:4px 8px}
+.site-preview{padding:20px}
+.preview-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.preview-logo{display:flex;align-items:center;gap:7px;font-family:'Archivo',sans-serif;font-size:9px;font-weight:700;letter-spacing:-.01em}
+.preview-logo i{display:grid;place-items:center;width:20px;height:20px;border-radius:6px;background:var(--primary);color:#fff;font-family:'Archivo',sans-serif;font-size:7px;font-style:normal}
+.preview-links{display:flex;gap:10px}
+.preview-links span{width:26px;height:3px;border-radius:2px;background:rgba(17,17,17,.14)}
+.preview-nav-cta{font-size:8px;font-weight:600;padding:6px 9px;border-radius:5px;background:var(--primary);color:#fff}
+.preview-hero{padding:24px 4px 18px}
+.preview-eyebrow{font-size:7.5px;font-weight:600;letter-spacing:.18em;color:var(--primary)}
+.preview-title{font-family:'Archivo',sans-serif;font-size:26px;font-weight:700;line-height:1.02;letter-spacing:-.045em;margin-top:9px;max-width:330px}
+.preview-title em{font-style:normal;color:var(--primary);background:linear-gradient(transparent 70%,rgba(234,70,15,.45) 70%)}
+.preview-sub{margin-top:10px;max-width:315px;font-size:9px;line-height:1.65;color:var(--muted)}
+.preview-buttons{display:flex;gap:6px;margin-top:14px}
+.preview-buttons span{font-size:8px;font-weight:600;padding:6px 10px;border-radius:5px}
+.preview-buttons span:first-child{background:var(--primary);color:#fff}
+.preview-buttons span:last-child{border:1px solid var(--line-strong)}
+.preview-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-top:15px;border-top:1px solid var(--line)}
+.preview-card{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface)}
+.preview-card i{display:block;width:17px;height:17px;border-radius:5px;border:1px solid var(--accent);margin-bottom:8px}
+.preview-card b{display:block;width:72%;height:4px;border-radius:2px;background:rgba(17,17,17,.22)}
+.preview-card em{display:block;width:46%;height:3px;border-radius:2px;background:rgba(17,17,17,.1);margin-top:5px}
+.float-card{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:11px 14px;background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow-sm)}
+.float-perf{top:2px;right:-6px}
+.float-wa{bottom:18px;left:-10px}
+.float-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--surface);color:var(--primary)}
+.float-icon.accent{background:var(--accent-soft)}
+.float-icon .icon{width:16px;height:16px}
+.float-card strong{display:block;font-family:'Archivo',sans-serif;font-size:12.5px;line-height:1.25;letter-spacing:-.01em}
+.float-card span{display:block;font-size:9.5px;color:var(--muted);margin-top:1px}
+
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-copy{max-width:700px}
+  .hero-visual{min-height:0}
+}
+@media(max-width:640px){
+  .hero{padding:38px 0 60px}
+  .hero h1{margin-top:18px}
+  .hero-sub{font-size:16px}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-stats{margin-top:30px}
+  .hero-stat strong{font-size:22px}
+  .hero-stat span{font-size:9.5px;letter-spacing:.06em}
+  .site-preview{padding:15px}
+  .preview-title{font-size:21px}
+  .float-perf{top:-12px;right:0}
+  .hero-visual{padding-bottom:72px}
+  .float-wa{bottom:0;left:0}
+  .float-card{padding:9px 11px}
+  .float-icon{width:28px;height:28px}
+  .float-card strong{font-size:11.5px}
+}
+@media(max-width:400px){
+  .float-perf{display:none}
+}
+
+/* trusted / industries */
+.trusted{padding:34px 0 36px;background:var(--surface);border-block:1px solid var(--line)}
+.trusted-head{text-align:center;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.trusted-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:22px}
+.trusted-item{display:flex;align-items:center;justify-content:center;gap:7px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:600;letter-spacing:-.01em;color:var(--ink-soft);text-align:center;line-height:1.25}
+.trusted-item .icon{width:17px;height:17px;color:var(--primary);flex:none}
+@media(max-width:820px){.trusted-row{grid-template-columns:repeat(3,1fr);gap:18px 12px}}
+@media(max-width:520px){.trusted-row{grid-template-columns:repeat(2,1fr);gap:16px 10px}.trusted-item{justify-content:flex-start;font-size:12.5px}}
+
+/* reviews */
+.reviews{padding:92px 0;background:var(--surface);border-top:1px solid var(--line)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px}
+.review{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px 22px}
+.review.featured{grid-column:span 2;background:var(--ink);border-color:transparent;color:#fff;padding:32px 30px 26px}
+.review-stars{display:flex;gap:3px;color:var(--primary)}
+.review-stars svg{width:13px;height:13px}
+.review.featured .review-stars{color:var(--accent)}
+.review blockquote{margin:14px 0 0;font-size:14.5px;line-height:1.7;color:var(--ink-soft)}
+.review.featured blockquote{margin-top:18px;font-family:'Archivo',sans-serif;font-size:20px;line-height:1.5;font-weight:500;letter-spacing:-.022em;color:#fff;max-width:660px}
+.review-who{display:flex;align-items:center;gap:11px;margin-top:auto;padding-top:22px}
+.review-avatar{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:var(--accent-soft);color:var(--primary);font-family:'Archivo',sans-serif;font-size:12.5px;font-weight:700}
+.review.featured .review-avatar{background:rgba(255,255,255,.14);color:#fff}
+.review-name{display:block;font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:-.015em}
+.review-meta{display:block;margin-top:1px;font-size:11.5px;color:var(--muted)}
+.review.featured .review-meta{color:rgba(255,255,255,.62)}
+.review-tag{display:inline-block;margin-top:14px;font-size:9.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.review.featured .review-tag{color:var(--accent)}
+@media(max-width:900px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.reviews-grid{grid-template-columns:1fr;margin-top:32px}.review.featured{grid-column:span 1;padding:26px 22px}.review.featured blockquote{font-size:17px;line-height:1.55}.reviews{padding:68px 0}}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:44px}
+.service-card{grid-column:span 6;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.service-card:hover{border-color:var(--line-strong);box-shadow:var(--shadow-sm)}
+.service-card.wide{grid-column:span 7}
+.service-card.narrow{grid-column:span 5}
+.service-card.dark{background:var(--ink);border-color:transparent;color:#fff}
+.service-visual{position:relative;min-height:196px;padding:22px;background:var(--surface);overflow:hidden}
+.service-card.dark .service-visual{background:#181210}
+.service-card.sand .service-visual{background:var(--surface-2)}
+.service-body{display:flex;flex:1;flex-direction:column;padding:22px 24px 24px}
+.service-kicker{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--primary)}
+.service-card.dark .service-kicker{color:var(--accent)}
+.service-body h3{font-family:'Archivo',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.035em;margin-top:7px}
+.service-body p{font-size:14px;line-height:1.65;color:var(--muted);margin-top:7px;max-width:430px}
+.service-card.dark .service-body p{color:rgba(255,255,255,.62)}
+.service-meta{display:flex;justify-content:space-between;gap:14px;margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink-soft)}
+.service-card.dark .service-meta{border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.58)}
+.service-meta strong{font-weight:600;color:var(--ink)}
+.service-card.dark .service-meta strong{color:var(--accent)}
+.service-body .text-link{margin-top:14px}
+.service-card.dark .text-link{color:var(--accent)}
+.service-card.split{display:grid;grid-template-columns:1.02fr .98fr}
+.service-card.split .service-visual{order:2;min-height:100%;display:flex;align-items:center;justify-content:center}
+.service-card.split .service-body{order:1;padding:26px}
+
+/* mini browser */
+.mini-browser{width:100%;max-width:230px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 30px -24px rgba(17,17,17,.5);overflow:hidden}
+.mini-browser-bar{display:flex;align-items:center;gap:4px;height:20px;padding:0 7px;background:#fff;border-bottom:1px solid var(--line)}
+.mini-browser-bar i{width:3.5px;height:3.5px;border-radius:50%;background:rgba(17,17,17,.18)}
+.mini-browser-bar span{margin-left:auto;margin-right:auto;width:72px;height:6px;border-radius:3px;background:var(--surface)}
+.mini-browser-body{padding:14px}
+.mini-line{width:30px;height:3px;border-radius:2px;background:var(--accent);margin-bottom:8px}
+.mini-title{width:86%;height:7px;border-radius:3px;background:rgba(17,17,17,.75);margin-bottom:4px}
+.mini-title.short{width:56%;background:rgba(17,17,17,.22)}
+.mini-copy{width:78%;height:3px;border-radius:2px;background:rgba(17,17,17,.12);margin-top:8px}
+.mini-copy.short{width:52%}
+.mini-cta{width:58px;height:14px;border-radius:4px;background:var(--primary);margin-top:11px}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:11px;border-top:1px solid var(--line);padding-top:9px}
+.mini-grid i{height:24px;border-radius:4px;border:1px solid var(--line);background:var(--surface)}
+
+/* phone */
+.phone{position:relative;width:142px;height:226px;margin-top:22px;background:var(--ink);border:5px solid var(--ink);border-radius:24px;box-shadow:0 24px 40px -26px rgba(17,17,17,.7);overflow:hidden}
+.phone-notch{position:absolute;top:5px;left:50%;transform:translateX(-50%);width:42px;height:9px;border-radius:0 0 7px 7px;background:var(--ink);z-index:2}
+.phone-screen{position:absolute;inset:4px;background:#fff;border-radius:16px;padding:16px 11px 10px;overflow:hidden}
+.phone-eyebrow{font-size:5.5px;font-weight:600;letter-spacing:.14em;color:var(--primary)}
+.phone-h{font-family:'Archivo',sans-serif;font-size:11px;font-weight:700;letter-spacing:-.02em;margin-top:3px}
+.phone-card{margin-top:8px;border:1px solid var(--line);border-radius:7px;padding:7px;background:var(--surface)}
+.phone-card i{display:block;width:12px;height:12px;border-radius:4px;background:var(--accent-soft);border:1px solid var(--accent)}
+.phone-card b{display:block;width:74%;height:3px;border-radius:2px;background:rgba(17,17,17,.3);margin-top:5px}
+.phone-card em{display:block;width:44%;height:2.5px;border-radius:2px;background:rgba(17,17,17,.12);margin-top:4px}
+.phone-tabs{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:7px 12px 9px;border-top:1px solid var(--line);background:#fff}
+.phone-tabs i{width:9px;height:9px;border-radius:3px;border:1px solid rgba(17,17,17,.25)}
+.phone-tabs i:first-child{background:var(--primary);border-color:var(--primary)}
+
+/* app handle */
+.handle-visual{display:flex;flex-direction:column;justify-content:center;height:100%}
+.status-line{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:500;color:rgba(255,255,255,.7)}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.chart{margin-top:14px;width:100%}
+.handle-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.handle-tags span{font-size:9px;font-weight:500;padding:4px 7px;border:1px solid rgba(255,255,255,.16);border-radius:5px;color:rgba(255,255,255,.65)}
+
+/* shield */
+.shield-wrap{position:relative;display:grid;place-items:center;width:100%;height:100%;min-height:150px}
+.shield-ring{position:absolute;width:150px;height:150px;border:1px solid var(--line);border-radius:50%}
+.shield-ring.small{width:106px;height:106px;border-color:rgba(234,70,15,.35)}
+.shield-icon{position:relative;z-index:1;display:grid;place-items:center;width:72px;height:72px;border-radius:20px;background:#fff;color:var(--primary);box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+.shield-icon .icon{width:34px;height:34px}
+.shield-chip{position:absolute;z-index:2;background:#fff;border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:8.5px;font-weight:600;color:var(--ink-soft);box-shadow:var(--shadow-sm);white-space:nowrap}
+.shield-chip.a{top:8px;right:12%}
+.shield-chip.b{bottom:10px;left:10%}
+
+@media(max-width:980px){
+  .service-card,.service-card.wide,.service-card.narrow{grid-column:span 12}
+  .service-card.split{grid-template-columns:1fr}
+  .service-card.split .service-visual{order:0;min-height:196px}
+  .service-body .text-link{margin-top:16px}
+}
+@media(max-width:560px){
+  .service-body{padding:20px}
+  .service-meta{flex-direction:column;gap:4px}
+}
+
+/* brand to website */
+.brand{background:var(--surface);border-block:1px solid var(--line)}
+.brand-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:44px}
+.brand-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column}
+.brand-step{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:26px;padding:0 8px;border-radius:6px;background:var(--accent-soft);color:var(--primary);font-family:'Archivo',sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;align-self:flex-start}
+.brand-card h3{font-family:'Archivo',sans-serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-top:16px}
+.brand-card>p{font-size:13.5px;line-height:1.65;color:var(--muted);margin-top:7px}
+.brand-logo-line{display:flex;align-items:center;gap:10px;margin-top:18px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.brand-logo-line .logo-mark{width:38px;height:38px}
+.brand-logo-line b{display:block;font-family:'Archivo',sans-serif;font-size:13px;letter-spacing:-.01em}
+.brand-logo-line span{display:block;font-size:10px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.chip{font-size:10.5px;font-weight:500;padding:5px 9px;border-radius:999px;border:1px solid var(--line-strong);color:var(--ink-soft);background:#fff}
+.swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:16px}
+.swatch{aspect-ratio:1.15;border-radius:8px;border:1px solid var(--line);padding:7px;display:flex;align-items:flex-end;font-size:8px;font-weight:600;letter-spacing:.02em}
+.swatch.dark{color:#fff;border-color:transparent}
+.type-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
+.type-sample{border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:#fff}
+.type-sample b{display:block;font-family:'Archivo',sans-serif;font-size:26px;font-weight:700;line-height:1;letter-spacing:-.03em}
+.type-sample span{display:block;font-size:9px;color:var(--muted);margin-top:3px}
+.type-sample.inter b{font-family:'Inter',sans-serif;font-weight:400}
+.plan-list{display:grid;gap:10px;margin-top:16px}
+.plan-list li{display:flex;gap:10px;font-size:13px;line-height:1.5;color:var(--ink-soft)}
+.plan-list .icon{width:16px;height:16px;color:var(--primary);margin-top:2px}
+.brand-mini{position:relative;margin-top:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;box-shadow:var(--shadow-sm)}
+.brand-mini-bar{display:flex;align-items:center;gap:4px;height:20px;padding:0 8px;border-bottom:1px solid var(--line);background:var(--surface)}
+.brand-mini-bar i{width:3.5px;height:3.5px;border-radius:50%;background:rgba(17,17,17,.2)}
+.brand-mini-body{padding:14px}
+.brand-mini-h{font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;line-height:1.1;letter-spacing:-.03em}
+.brand-mini-h em{font-style:normal;color:var(--primary);background:linear-gradient(transparent 68%,rgba(234,70,15,.5) 68%)}
+.brand-mini p{font-size:7px;color:var(--muted);margin-top:5px;max-width:190px;line-height:1.5}
+.brand-mini .mini-cta{width:48px;height:12px;margin-top:8px}
+.notes{display:grid;gap:5px;margin-top:14px}
+.notes li{position:relative;padding-left:12px;font-size:11px;line-height:1.5;color:var(--muted)}
+.notes li::before{content:"";position:absolute;left:0;top:6px;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+@media(max-width:900px){.brand-grid{grid-template-columns:1fr}}
+@media(max-width:380px){.swatches{grid-template-columns:repeat(2,1fr)}}
+
+/* how we build */
+.build-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.build-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.build-num{font-family:'Archivo',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--primary)}
+.build-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:var(--accent-soft);color:var(--primary);margin-top:18px}
+.build-icon .icon{width:19px;height:19px}
+.build-card h3{font-family:'Archivo',sans-serif;font-size:17px;font-weight:700;letter-spacing:-.02em;margin-top:14px}
+.build-card p{font-size:13px;line-height:1.6;color:var(--muted);margin-top:6px}
+@media(max-width:900px){.build-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.build-grid{grid-template-columns:1fr}}
+
+/* included */
+.included{background:var(--ink);color:#fff;padding:92px 0}
+.included .eyebrow{color:var(--accent)}
+.included .section-title{color:#fff}
+.included .section-sub{color:rgba(255,255,255,.58)}
+.included-panel{display:grid;grid-template-columns:repeat(3,1fr);margin-top:42px;border:1px solid rgba(255,255,255,.14);border-radius:20px;overflow:hidden}
+.included-item{padding:26px;border-right:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
+.included-item:nth-child(3n){border-right:0}
+.included-item:nth-child(n+4){border-bottom:0}
+.included-item .icon{width:20px;height:20px;color:var(--accent)}
+.included-item h3{font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;margin-top:13px;letter-spacing:-.01em}
+.included-item p{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.55);margin-top:4px}
+@media(max-width:820px){
+  .included-panel{grid-template-columns:repeat(2,1fr)}
+  .included-item:nth-child(3n){border-right:1px solid rgba(255,255,255,.1)}
+  .included-item:nth-child(2n){border-right:0}
+  .included-item:nth-child(n+4){border-bottom:1px solid rgba(255,255,255,.1)}
+  .included-item:nth-child(n+5){border-bottom:0}
+}
+@media(max-width:520px){.included-panel{grid-template-columns:1fr}.included-item{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.1)!important}.included-item:last-child{border-bottom:0!important}}
+
+/* standard */
+.standard-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.standard-quote{font-family:'Archivo',sans-serif;font-size:clamp(26px,3.3vw,40px);font-weight:600;line-height:1.12;letter-spacing:-.045em;margin-top:16px}
+.standard-quote em{font-style:normal;color:var(--primary);background:linear-gradient(transparent 72%,rgba(234,70,15,.4) 72%)}
+.standard-sign{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:12.5px;color:var(--muted)}
+.standard-sign .logo-mark{width:32px;height:32px}
+.standard-list{display:grid;gap:10px}
+.standard-item{display:flex;gap:13px;padding:17px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.standard-item .icon{width:19px;height:19px;color:var(--primary);margin-top:2px}
+.standard-item h3{font-family:'Archivo',sans-serif;font-size:14.5px;font-weight:600;letter-spacing:-.01em}
+.standard-item p{font-size:12.5px;line-height:1.55;color:var(--muted);margin-top:2px}
+.references{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:12.5px;font-weight:600;color:var(--primary)}
+@media(max-width:900px){.standard-grid{grid-template-columns:1fr;gap:32px}}
+
+/* how it works */
+.how{background:var(--surface);border-block:1px solid var(--line);padding:92px 0}
+.how-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.how-head .section-sub{margin-top:14px}
+.how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.how-step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column}
+.how-step .num{font-family:'Archivo',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--primary)}
+.how-step h3{font-family:'Archivo',sans-serif;font-size:19px;font-weight:700;letter-spacing:-.03em;margin-top:16px}
+.how-step p{font-size:13.5px;line-height:1.65;color:var(--muted);margin-top:7px}
+.free-chip{display:inline-block;margin-top:14px;padding:4px 8px;border-radius:5px;background:var(--accent-soft);font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);align-self:flex-start}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:26px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+.timeline div{padding:14px 16px;border-right:1px solid var(--line)}
+.timeline div:last-child{border-right:0}
+.timeline strong{display:block;font-family:'Archivo',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--primary)}
+.timeline span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+@media(max-width:820px){.how-steps{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.timeline div:nth-child(2){border-right:0}.timeline div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:56px;align-items:start}
+.faq-aside{position:sticky;top:100px}
+.faq-contact{margin-top:24px;padding:18px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.faq-contact p{font-size:12.5px;color:var(--muted);line-height:1.6}
+.faq-contact a{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--primary)}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;font-size:15px;font-weight:600;letter-spacing:-.01em;cursor:pointer;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-plus{display:grid;place-items:center;width:22px;height:22px;flex:none;border:1px solid var(--line-strong);border-radius:50%;color:var(--primary);transition:transform .2s,background-color .2s}
+.faq-plus .icon{width:12px;height:12px}
+.faq-item[open] .faq-plus{transform:rotate(45deg);background:var(--accent-soft)}
+.faq-item p{padding:0 36px 18px 0;font-size:13.5px;line-height:1.7;color:var(--muted)}
+@media(max-width:860px){.faq-grid{grid-template-columns:1fr;gap:32px}.faq-aside{position:static}}
+
+/* cta */
+.cta{background:var(--ink);color:#fff;padding:92px 0}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cta .eyebrow{color:var(--accent)}
+.cta h2{font-family:'Archivo',sans-serif;font-size:clamp(33px,4.2vw,50px);font-weight:700;line-height:1.04;letter-spacing:-.04em;margin-top:16px;color:#fff}
+.cta-sub{max-width:430px;margin-top:16px;font-size:15.5px;line-height:1.7;color:rgba(255,255,255,.62)}
+.cta-list{display:grid;gap:9px;margin-top:24px;font-size:13px;color:rgba(255,255,255,.78)}
+.cta-list li{display:flex;align-items:center;gap:8px}
+.cta-list .icon{width:16px;height:16px;color:var(--accent)}
+.form-card{background:#fff;color:var(--ink);border-radius:20px;padding:28px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.form-card h3{font-family:'Archivo',sans-serif;font-size:19px;font-weight:700;letter-spacing:-.02em}
+.form-card>p{font-size:12px;color:var(--muted);margin-top:3px}
+.form-fields{display:grid;gap:12px;margin-top:18px}
+.field label{display:block;margin-bottom:5px;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
+.field input,.field select{width:100%;height:46px;padding:0 13px;border:1px solid var(--line-strong);border-radius:9px;background:#fff;font-size:13.5px;outline:none;transition:border-color .15s,box-shadow .15s;appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%23EA460F' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px}
+.field input::placeholder{color:rgba(17,17,17,.36)}
+.field input:focus,.field select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(234,70,15,.2)}
+.field .error{display:none;margin-top:3px;font-size:10.5px;color:#DC2626}
+.field.invalid input{border-color:#DC2626}
+.field.invalid .error{display:block}
+.form-card .btn{margin-top:4px}
+.form-note{margin-top:9px;text-align:center;font-size:10px;line-height:1.5;color:var(--muted)}
+.form-success{text-align:center;padding:8px 0}
+.success-icon{display:grid;place-items:center;width:52px;height:52px;margin:0 auto;border-radius:50%;background:var(--accent-soft);color:var(--primary)}
+.success-icon .icon{width:24px;height:24px}
+.form-success h3{margin-top:14px}
+.form-success p{font-size:12.5px;line-height:1.65;color:var(--muted);margin-top:6px}
+.form-success .btn{margin-top:16px}
+.form-success .link-button{margin-top:10px}
+@media(max-width:900px){.cta-grid{grid-template-columns:1fr;gap:32px}.cta-list{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cta-list{grid-template-columns:1fr}.form-card{padding:20px}}
+
+/* footer */
+.footer{padding:52px 0 24px;border-top:1px solid var(--line);background:#fff}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:34px}
+.footer-brand p{max-width:270px;margin-top:14px;font-size:12.5px;line-height:1.65;color:var(--muted)}
+.footer h4{font-family:'Archivo',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.footer ul{display:grid;gap:8px;margin-top:14px}
+.footer ul a,.footer ul li{font-size:12.5px;color:var(--muted);transition:color .15s}
+.footer ul a:hover{color:var(--primary)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+.footer-bottom a:hover{color:var(--primary)}
+@media(max-width:820px){.footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m3.5 7 8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 18.5h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m20 20-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M20 4v7h-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="m4 20 4-1L18 9l-3-3L5 16l-1 4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m13 6 3 3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13 5l-2 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13h5l-1 8 8-10h-5l1-8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1.1 5.8-5.3-2.9-5.3 2.9 1.1-5.8L3.5 9.7l5.9-.8L12 3.5Z" fill="currentColor"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="CodeCare Solutions — home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 12.5 9.5 20l6 7.5M24.5 12.5l6 7.5-6 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="logo-text">CodeCare<small>Solutions</small></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#brand">Our approach</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline btn-sm" href="mailto:hellocodecaresolutions@gmail.com?subject=Project%20enquiry%20%E2%80%94%20CodeCare%20Solutions">Email us</a>
+      <a class="btn btn-primary btn-sm" href="#free">Get free homepage</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" id="menu-toggle"><svg class="icon menu-icon" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon close-icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="container">
+      <a href="#services">Services</a>
+      <a href="#brand">Our approach</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#how">Free homepage</a>
+      <a class="btn btn-primary btn-block" href="#free">Get my free homepage</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><span class="badge-dot"></span>100+ brands served · 50+ projects shipped</span>
+        <h1>Websites that get you <span class="mark">customers.</span></h1>
+        <p class="hero-sub">We design and build websites and apps for growing businesses — then handle them after launch. Your free homepage concept is ready in 24 hours; your live product in three weeks.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#free">Get my free homepage <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline" href="mailto:hellocodecaresolutions@gmail.com?subject=Free%20homepage%20concept%20request&amp;body=Hi%20CodeCare%2C%20I%27d%20like%20a%20free%20homepage%20concept.%0A%0ABusiness%3A%20%0AWhat%20I%20need%3A%20"><svg class="icon" width="17" height="17" aria-hidden="true"><use href="#i-mail"/></svg> Email us</a>
+        </div>
+        <p class="trust-line">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Fixed timelines</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Fixed prices</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>You own everything</span>
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>24h</strong><span>Free homepage</span></div>
+          <div class="hero-stat"><strong>3 wks</strong><span>Typical launch</span></div>
+          <div class="hero-stat"><strong>50+</strong><span>Projects shipped</span></div>
+        </div>
+        <div class="worldwide">
+          <span class="flags" aria-hidden="true">
+            <span class="flag"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#fff"/><g fill="#B22234"><rect y="0" width="24" height="2.6"/><rect y="5.2" width="24" height="2.6"/><rect y="10.4" width="24" height="2.6"/><rect y="15.6" width="24" height="2.6"/><rect y="20.8" width="24" height="2.6"/></g><rect width="11" height="13" fill="#3C3B6E"/></svg></span>
+            <span class="flag"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#012169"/><path d="M0 0 24 24M24 0 0 24" stroke="#fff" stroke-width="5"/><path d="M0 0 24 24M24 0 0 24" stroke="#C8102E" stroke-width="2"/><path d="M12 0v24M0 12h24" stroke="#fff" stroke-width="7"/><path d="M12 0v24M0 12h24" stroke="#C8102E" stroke-width="4"/></svg></span>
+            <span class="flag"><svg viewBox="0 0 24 24"><rect width="24" height="8" fill="#00732F"/><rect y="8" width="24" height="8" fill="#fff"/><rect y="16" width="24" height="8" fill="#101010"/><rect width="8" height="24" fill="#E2231A"/></svg></span>
+            <span class="flag"><svg viewBox="0 0 24 24"><rect width="24" height="8" fill="#FF9933"/><rect y="8" width="24" height="8" fill="#fff"/><rect y="16" width="24" height="8" fill="#138808"/><circle cx="12" cy="12" r="3.1" fill="none" stroke="#0B3C8A" stroke-width="1"/></svg></span>
+            <span class="flag"><svg viewBox="0 0 24 24"><rect width="24" height="12" fill="#ED2939"/><rect y="12" width="24" height="12" fill="#fff"/><circle cx="7.6" cy="6" r="3.4" fill="#fff"/><circle cx="9.3" cy="6" r="2.9" fill="#ED2939"/></svg></span>
+          </span>
+          <span class="worldwide-text"><strong>Websites live worldwide</strong>U.S. · U.K. · U.A.E. · India · Singapore</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="browser">
+          <div class="browser-bar" aria-hidden="true">
+            <span class="browser-dots"><i></i><i></i><i></i></span>
+            <span class="browser-url">yourbrand.in</span>
+            <span style="width:10px;height:10px;border:1px solid var(--line-strong);border-radius:50%"></span>
+          </div>
+          <div class="site-preview" aria-hidden="true">
+            <div class="preview-nav">
+              <span class="preview-logo"><i>CC</i>CodeCare</span>
+              <span class="preview-links"><span></span><span></span><span></span></span>
+              <span class="preview-nav-cta">Get a quote</span>
+            </div>
+            <div class="preview-hero">
+              <span class="preview-eyebrow">WEB DESIGN &amp; DEVELOPMENT</span>
+              <p class="preview-title">A website that earns its keep. <em>Yours.</em></p>
+              <p class="preview-sub">Designed around your brand, built for speed, and measured by the enquiries it brings in.</p>
+              <div class="preview-buttons"><span>Start a project</span><span>See services</span></div>
+            </div>
+            <div class="preview-cards">
+              <div class="preview-card"><i></i><b></b><em></em></div>
+              <div class="preview-card"><i></i><b></b><em></em></div>
+              <div class="preview-card"><i></i><b></b><em></em></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card float-perf" aria-hidden="true">
+          <span class="float-icon accent"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+          <span><strong>Fast by default</strong><span>Lean, clean code</span></span>
+        </div>
+        <div class="float-card float-wa" aria-hidden="true">
+          <span class="float-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <span><strong>New enquiry</strong><span>Arrived by email</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted" aria-label="Industries we serve">
+    <div class="container">
+      <p class="trusted-head">Trusted by growing teams across India</p>
+      <div class="trusted-row">
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>D2C &amp; Retail</span>
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Clinics &amp; Health</span>
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Restaurants</span>
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>Logistics</span>
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Real Estate</span>
+        <span class="trusted-item"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg>Education</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we build</span>
+        <h2 class="section-title">Build it, or hand it to us.</h2>
+        <p class="section-sub">Websites, apps and the quiet work after launch. One team, one fixed price, no handoffs.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card wide split">
+          <div class="service-body">
+            <span class="service-kicker">01 · Website</span>
+            <h3>Web Make</h3>
+            <p>A website that loads before they blink, explains your business in five seconds and turns visitors into enquiries.</p>
+            <div class="service-meta"><span><strong>Quoted upfront</strong></span><span>2–3 weeks</span></div>
+            <a class="text-link" href="#free" data-service="New website">Start a website <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="service-visual" aria-hidden="true">
+            <div class="mini-browser">
+              <div class="mini-browser-bar"><i></i><i></i><i></i><span></span></div>
+              <div class="mini-browser-body">
+                <div class="mini-line"></div>
+                <div class="mini-title"></div>
+                <div class="mini-title short"></div>
+                <div class="mini-copy"></div>
+                <div class="mini-copy short"></div>
+                <div class="mini-cta"></div>
+                <div class="mini-grid"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card narrow">
+          <div class="service-visual" aria-hidden="true" style="display:flex;align-items:flex-end;justify-content:center;padding-bottom:0">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="phone-eyebrow">TODAY</div>
+                <div class="phone-h">Good morning.</div>
+                <div class="phone-card"><i></i><b></b><em></em></div>
+                <div class="phone-card"><i></i><b></b><em></em></div>
+                <div class="phone-card"><i></i><b></b><em></em></div>
+                <div class="phone-tabs"><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="service-body">
+            <span class="service-kicker">02 · Mobile app</span>
+            <h3>App Make</h3>
+            <p>A fast, reliable app your customers keep on their first screen. Built for real taps, real flow, real retention.</p>
+            <div class="service-meta"><span><strong>Quoted upfront</strong></span><span>3–4 weeks</span></div>
+            <a class="text-link" href="#free" data-service="Mobile app">Start an app <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="service-card narrow dark">
+          <div class="service-visual" aria-hidden="true">
+            <div class="handle-visual">
+              <span class="status-line"><span class="status-dot"></span>Monitoring on · everything healthy</span>
+              <svg class="chart" viewBox="0 0 220 74" aria-hidden="true">
+                <path d="M0 58 C22 58 30 44 48 46 S78 62 96 44 S124 18 144 26 S176 44 194 22 S208 12 220 14" fill="none" stroke="#FF7A3D" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M0 58 C22 58 30 44 48 46 S78 62 96 44 S124 18 144 26 S176 44 194 22 S208 12 220 14 L220 74 L0 74 Z" fill="rgba(234,70,15,.1)"/>
+                <g fill="#FF7A3D"><circle cx="96" cy="44" r="2.6"/><circle cx="144" cy="26" r="2.6"/><circle cx="194" cy="22" r="2.6"/></g>
+              </svg>
+              <div class="handle-tags"><span>Auto updates</span><span>Crash fixes</span><span>Store releases</span></div>
+            </div>
+          </div>
+          <div class="service-body">
+            <span class="service-kicker">03 · App handling</span>
+            <h3>App Handle</h3>
+            <p>Store updates, crash fixes and releases handled before your users ever notice. You run the business; we run the app.</p>
+            <div class="service-meta"><span><strong>Monthly plan</strong></span><span>Ongoing</span></div>
+            <a class="text-link" href="#free" data-service="Ongoing handling">Hand us your app <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="service-card wide split sand">
+          <div class="service-body">
+            <span class="service-kicker">04 · Website handling</span>
+            <h3>Web Handle</h3>
+            <p>Hosting, backups, security and small changes. Your site stays fast, safe and current while you sleep.</p>
+            <div class="service-meta"><span><strong>Monthly plan</strong></span><span>Ongoing</span></div>
+            <a class="text-link" href="#free" data-service="Ongoing handling">Hand us your site <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="service-visual" aria-hidden="true">
+            <div class="shield-wrap">
+              <span class="shield-ring"></span>
+              <span class="shield-ring small"></span>
+              <span class="shield-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <span class="shield-chip a">SSL active</span>
+              <span class="shield-chip b">Backups daily</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section brand" id="brand">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">From brand to website</span>
+        <h2 class="section-title">A page that feels like your business — because it was designed from it.</h2>
+        <p class="section-sub">No templates. No stock layouts. Here is the exact thinking that shaped this page.</p>
+      </div>
+
+      <div class="brand-grid">
+        <article class="brand-card">
+          <span class="brand-step">01</span>
+          <h3>The brand</h3>
+          <p>Apps and websites for growing businesses. Built in Bangalore, working across India.</p>
+          <div class="brand-logo-line">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 12.5 9.5 20l6 7.5M24.5 12.5l6 7.5-6 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><b>CodeCare Solutions</b><span>Websites, apps &amp; ongoing care</span></span>
+          </div>
+          <p style="margin-top:16px">Who buys: founders and small teams who need a website that sells — and someone dependable to handle it afterwards.</p>
+          <div class="chips"><span class="chip">Founders</span><span class="chip">D2C brands</span><span class="chip">Clinics</span><span class="chip">Restaurants</span><span class="chip">Logistics</span></div>
+        </article>
+
+        <article class="brand-card">
+          <span class="brand-step">02</span>
+          <h3>What we took from it</h3>
+          <p>Clean, composed and precise. The palette and type do the quiet work before a single word is read.</p>
+          <div class="swatches">
+            <span class="swatch dark" style="background:#EA460F">#EA460F</span>
+            <span class="swatch" style="background:#FF7A3D">#FF7A3D</span>
+            <span class="swatch" style="background:#FAF7F2">#FAF7F2</span>
+            <span class="swatch dark" style="background:#101010">#101010</span>
+          </div>
+          <div class="type-row">
+            <span class="type-sample"><b>Aa</b><span>Archivo · headings</span></span>
+            <span class="type-sample inter"><b>Aa</b><span>Inter · body</span></span>
+          </div>
+          <div class="chips"><span class="chip">Calm</span><span class="chip">Precise</span><span class="chip">Dependable</span></div>
+        </article>
+
+        <article class="brand-card">
+          <span class="brand-step">03</span>
+          <h3>The first screen</h3>
+          <ul class="plan-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>The promise first.</strong> “Websites that get you customers” in the largest type on the page.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Proof before the pitch.</strong> 100+ brands served, fixed timelines, and a free homepage in 24 hours.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>One obvious next step.</strong> A single primary action, repeated at every decision point.</span></li>
+          </ul>
+        </article>
+
+        <article class="brand-card">
+          <span class="brand-step">04</span>
+          <h3>The live page</h3>
+          <div class="brand-mini" aria-hidden="true">
+            <div class="brand-mini-bar"><i></i><i></i><i></i></div>
+            <div class="brand-mini-body">
+              <div class="brand-mini-h">Websites that get you <em>customers.</em></div>
+              <p>We design, build and handle websites and apps for growing businesses.</p>
+              <div class="mini-cta"></div>
+            </div>
+          </div>
+          <ul class="notes">
+            <li>White space signals confidence — nothing competes with the promise.</li>
+            <li>Orange appears only where we want a decision: CTAs, highlights, proof.</li>
+            <li>Every section ends with one clear action, never a maze of options.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How we build</span>
+        <h2 class="section-title">Four quiet phases. No surprises.</h2>
+        <p class="section-sub">A small, senior team. Weekly demo links. A fixed scope agreed before anyone writes a line of code.</p>
+      </div>
+      <div class="build-grid">
+        <article class="build-card">
+          <span class="build-num">01</span>
+          <span class="build-icon"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span>
+          <h3>Design</h3>
+          <p>Your brand, content and customer shape the layout. You see the first screen before anything is built.</p>
+        </article>
+        <article class="build-card">
+          <span class="build-num">02</span>
+          <span class="build-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+          <h3>Build</h3>
+          <p>Clean, fast, responsive code. Weekly demo links, no black boxes and no surprise scope.</p>
+        </article>
+        <article class="build-card">
+          <span class="build-num">03</span>
+          <span class="build-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+          <h3>Launch</h3>
+          <p>Domain, hosting, analytics and search basics handled. Tested on real phones before it goes live.</p>
+        </article>
+        <article class="build-card">
+          <span class="build-num">04</span>
+          <span class="build-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <h3>Support</h3>
+          <p>Updates, fixes, backups and security. We stay after launch, so you never chase a developer again.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Included in every project</span>
+        <h2 class="section-title">The things you shouldn't have to ask for.</h2>
+        <p class="section-sub">Every build ships with the same baseline. No upsells for the basics.</p>
+      </div>
+      <div class="included-panel">
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg><h3>Responsive by default</h3><p>Phone, tablet and desktop tested on real devices.</p></div>
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><h3>Fast-loading</h3><p>Optimised assets and clean code, built for a 90+ performance target.</p></div>
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><h3>Ready for Google &amp; AI search</h3><p>Semantic HTML, metadata, schema and a clean crawlable structure.</p></div>
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg><h3>Designed for your brand</h3><p>Your colours, fonts and voice — no recycled template layouts.</p></div>
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><h3>Secure with backups</h3><p>SSL, hardened hosting and automated backups on every handled site.</p></div>
+        <div class="included-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><h3>Yours to own</h3><p>Code, domain, accounts and keys are handed to you. No lock-in.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="standard-title">
+    <div class="container standard-grid">
+      <div>
+        <h2 class="eyebrow" id="standard-title">The CodeCare standard</h2>
+        <p class="standard-quote">“We treat your product as if our name were on it. <em>Because it is.</em>”</p>
+        <div class="standard-sign">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 12.5 9.5 20l6 7.5M24.5 12.5l6 7.5-6 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>CodeCare Solutions · Bangalore, India</span>
+        </div>
+        <a class="references" href="mailto:hellocodecaresolutions@gmail.com?subject=Client%20references%20request">Ask for client references <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="standard-list">
+        <div class="standard-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Fixed price, agreed first</h3><p>You know the number before we start. No hourly surprises, no scope creep.</p></div></div>
+        <div class="standard-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Direct access to the builders</h3><p>You talk to the people doing the work — not an account manager relaying messages.</p></div></div>
+        <div class="standard-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><h3>We answer after launch</h3><p>Handling plans cover updates, fixes and backups, with support when something needs attention.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">After launch</span>
+        <h2 class="section-title" id="reviews-title">The part clients remember is what happened next.</h2>
+        <p class="section-sub">Not “great service, highly recommended.” The specific things that changed once the site went live.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review featured">
+          <div class="review-stars" aria-label="5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+          <blockquote>“Five months in, the site has paid for itself twice. We used to get maybe four enquiries a month from Instagram. Now it's more than that every week, and half of them land in my inbox already knowing what they want and what it costs.”</blockquote>
+          <div class="review-tag">Website · Live in 3 weeks</div>
+          <div class="review-who">
+            <span class="review-avatar">RI</span>
+            <span><span class="review-name">Ramesh Iyer</span><span class="review-meta">Sri Lakshmi Textiles · Coimbatore</span></span>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-stars" aria-label="5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+          <blockquote>“They asked for our logo, our menu and a price list — nothing else. The homepage came back the next morning and looked like a company ten times our size. My brother assumed we had hired someone in Dubai.”</blockquote>
+          <div class="review-tag">Website · 2 weeks</div>
+          <div class="review-who">
+            <span class="review-avatar">FA</span>
+            <span><span class="review-name">Faizan Ahmed</span><span class="review-meta">Zaitoon Kitchen · Frazer Town</span></span>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-stars" aria-label="5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+          <blockquote>“Everyone warned me an app would take four months of back and forth. It was live in nineteen days. Patients book in three taps now, and someone still answers the same day when a booking goes sideways.”</blockquote>
+          <div class="review-tag">Mobile app · 3 weeks</div>
+          <div class="review-who">
+            <span class="review-avatar">AR</span>
+            <span><span class="review-name">Dr. Ananya Rao</span><span class="review-meta">Aarogya Dental · Jayanagar</span></span>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-stars" aria-label="5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+          <blockquote>“I broke our booking page myself on a Friday night. It was fixed before I opened the shop on Saturday. That is the entire reason I keep paying the monthly handling.”</blockquote>
+          <div class="review-tag">Handling · Monthly</div>
+          <div class="review-who">
+            <span class="review-avatar">PM</span>
+            <span><span class="review-name">Priya Menon</span><span class="review-meta">Nilgiri Soaps · Kochi</span></span>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-stars" aria-label="5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+          <blockquote>“Our old site took eight seconds on 4G — customers told us so, bluntly. The new one loads in under two. Enquiries went from a trickle to something we now schedule time to answer.”</blockquote>
+          <div class="review-tag">Website · 4 weeks</div>
+          <div class="review-who">
+            <span class="review-avatar">JM</span>
+            <span><span class="review-name">Joseph Mathew</span><span class="review-meta">Transit Logistics · Whitefield</span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="container">
+      <div class="how-head">
+        <div class="section-head" style="margin:0">
+          <span class="eyebrow">How it works</span>
+          <h2 class="section-title">Your free homepage, in 24 hours.</h2>
+          <p class="section-sub">See the design before you spend a rupee. Keep it whether we build the rest or not.</p>
+        </div>
+        <a class="btn btn-primary" href="#free">Start with the form <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="how-steps">
+        <article class="how-step">
+          <span class="num">01</span>
+          <h3>Tell us about your business</h3>
+          <p>Two minutes by email or the form below. Your business, your customers, and the one action you want visitors to take.</p>
+        </article>
+        <article class="how-step">
+          <span class="num">02</span>
+          <h3>We design your homepage</h3>
+          <p>One considered concept, mobile and desktop, in your brand — delivered within 24 hours.</p>
+          <span class="free-chip">Free · No advance</span>
+        </article>
+        <article class="how-step">
+          <span class="num">03</span>
+          <h3>Like it? We build the rest</h3>
+          <p>Full website in 2–3 weeks at a fixed price. Or take the design and run with it. No pressure either way.</p>
+        </article>
+      </div>
+
+      <div class="timeline" aria-label="Free homepage timeline">
+        <div><strong>0–2 HOURS</strong><span>Study your brand</span></div>
+        <div><strong>2–6 HOURS</strong><span>Plan the first screen</span></div>
+        <div><strong>6–18 HOURS</strong><span>Design mobile &amp; desktop</span></div>
+        <div><strong>18–24 HOURS</strong><span>Check &amp; send</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-aside">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Questions, answered.</h2>
+        <p class="section-sub">If yours isn't here, email us. We answer in plain English, not agency-speak.</p>
+        <div class="faq-contact">
+          <p>Still deciding? Send us your business name and we'll tell you honestly whether a new site is the right next step.</p>
+          <a href="mailto:hellocodecaresolutions@gmail.com?subject=Question%20about%20a%20project">Email us <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Why is the homepage free?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>It is our first step, not a trick. We design one homepage concept from your brand so you can judge the work before paying anything. If you like it, we build the rest. If not, the concept is still yours to keep.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How fast can you deliver?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>The free homepage concept arrives within 24 hours. A full website takes 2–3 weeks; an app takes 3–4 weeks. The timeline is agreed in writing before we start.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you use templates?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>No. Every layout starts from your brand, your content and your customer. This page was designed from scratch for CodeCare — not assembled from a theme.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I edit the site myself?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Yes. We hand over the code and a short walkthrough. If you would rather not touch it, our Web Handle plan covers updates and small changes for you.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you do SEO?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Every build includes clean semantic HTML, metadata, fast loading and schema markup. Ongoing content and keyword campaigns can be added as a separate scope, priced upfront.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens after launch?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>You can take everything and run it yourself, or hand it to us. Monthly handling covers hosting, backups, security, updates and fixes, with 24/7 support.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I own the website?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Yes — the code, domain, hosting accounts and keys are yours. We build on your accounts wherever possible, so there is never any lock-in.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does pricing work?<span class="faq-plus"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Every project is quoted before we start, and that number is fixed once you agree to it. Websites, apps and monthly handling are priced separately, so you only pay for what you actually need — no hourly surprises.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="free">
+    <div class="container cta-grid">
+      <div>
+        <span class="eyebrow">Start here</span>
+        <h2>Get your free homepage in 24 hours.</h2>
+        <p class="cta-sub">Tell us about your business. We'll send a homepage concept designed for it — no advance, no lock-in.</p>
+        <ul class="cta-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Designed from your brand, not a template</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Mobile and desktop first screen</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Yours to keep, whatever you decide</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <form id="enquiry-form" novalidate>
+          <h3>Request your free homepage</h3>
+          <p>We reply by email — usually within a few hours.</p>
+          <div class="form-fields">
+            <div class="field" id="field-name">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" aria-describedby="name-error">
+              <span class="error" id="name-error" role="alert">Please enter your name.</span>
+            </div>
+            <div class="field" id="field-business">
+              <label for="business">Business name</label>
+              <input id="business" name="business" type="text" placeholder="Your business name" autocomplete="organization" aria-describedby="business-error">
+              <span class="error" id="business-error" role="alert">Please enter your business name.</span>
+            </div>
+            <div class="field" id="field-phone">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91 98765 43210" autocomplete="tel" aria-describedby="phone-error">
+              <span class="error" id="phone-error" role="alert">Enter a valid phone number.</span>
+            </div>
+            <div class="field">
+              <label for="need">What do you need?</label>
+              <select id="need" name="need">
+                <option>Free homepage concept</option>
+                <option>New website</option>
+                <option>Website redesign</option>
+                <option>Mobile app</option>
+                <option>Ongoing handling</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Send my details <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="form-note">Opens your email app with the details filled in. No spam, no sales calls unless you ask.</p>
+        </form>
+
+        <div class="form-success" id="form-success" hidden aria-live="polite">
+          <span class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+          <h3>Almost there, <span data-success-name>friend</span>.</h3>
+          <p>Your email app should be opening with the details filled in. Send it and we'll take it from there — usually within a few hours.</p>
+          <a class="btn btn-primary btn-block" id="success-mail" href="mailto:hellocodecaresolutions@gmail.com">Open email app <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <button class="link-button" type="button" id="copy-details">Copy my details</button>
+          <button class="link-button" type="button" id="reset-form">Send another enquiry</button>
+          <p class="form-note">Or write to <a href="mailto:hellocodecaresolutions@gmail.com" style="color:var(--primary);text-decoration:underline;text-underline-offset:2px">hellocodecaresolutions@gmail.com</a> directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="CodeCare Solutions — back to top">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 12.5 9.5 20l6 7.5M24.5 12.5l6 7.5-6 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo-text">CodeCare<small>Solutions</small></span>
+        </a>
+        <p>Websites and apps for growing businesses. Built in Bangalore, handled for the long run.</p>
+        <p style="margin-top:10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase">Fixed timelines · Fixed prices · No lock-in</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#brand">Our approach</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#free">Free homepage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Make</a></li>
+          <li><a href="#services">App Make</a></li>
+          <li><a href="#services">Web Handle</a></li>
+          <li><a href="#services">App Handle</a></li>
+          <li><a href="#free">Full package</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hellocodecaresolutions@gmail.com">hellocodecaresolutions@gmail.com</a></li>
+          <li><span style="display:inline-flex;align-items:center;gap:6px"><svg class="icon" width="14" height="14" aria-hidden="true" style="color:var(--primary)"><use href="#i-pin"/></svg>Bangalore, India</span></li>
+          <li><span style="display:inline-flex;align-items:center;gap:6px"><svg class="icon" width="14" height="14" aria-hidden="true" style="color:var(--primary)"><use href="#i-monitor"/></svg>Mon–Sat · 24/7 support</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> CodeCare Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in Bangalore. <a href="#top">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* form mail goes here, keep it in sync with the mailto links above */
+  var MAIL_TO = 'hellocodecaresolutions@gmail.com';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* sticky header */
+  var header = document.getElementById('site-header');
+  function onScroll() {
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* mobile nav */
+  var toggle = document.getElementById('menu-toggle');
+  var mobileNav = document.getElementById('mobile-nav');
+  function closeMenu() {
+    mobileNav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+  }
+  toggle.addEventListener('click', function () {
+    var open = mobileNav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  mobileNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeMenu();
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 960) closeMenu();
+  });
+
+  /* service links fill in the enquiry type */
+  var need = document.getElementById('need');
+  document.querySelectorAll('[data-service]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (need) need.value = link.getAttribute('data-service');
+    });
+  });
+
+  /* enquiry form */
+  var form = document.getElementById('enquiry-form');
+  var success = document.getElementById('form-success');
+  var successName = success.querySelector('[data-success-name]');
+  var successMail = document.getElementById('success-mail');
+  var copyButton = document.getElementById('copy-details');
+  var lastDetails = '';
+  var resetButton = document.getElementById('reset-form');
+  var nameInput = document.getElementById('name');
+  var businessInput = document.getElementById('business');
+  var phoneInput = document.getElementById('phone');
+  var fieldName = document.getElementById('field-name');
+  var fieldBusiness = document.getElementById('field-business');
+  var fieldPhone = document.getElementById('field-phone');
+
+  function setInvalid(field, invalid) {
+    field.classList.toggle('invalid', invalid);
+    var input = field.querySelector('input');
+    if (input) input.setAttribute('aria-invalid', invalid ? 'true' : 'false');
+  }
+
+  function clearErrors() {
+    setInvalid(fieldName, false);
+    setInvalid(fieldBusiness, false);
+    setInvalid(fieldPhone, false);
+  }
+
+  [nameInput, businessInput, phoneInput].forEach(function (input) {
+    input.addEventListener('input', function () {
+      setInvalid(input.closest('.field'), false);
+    });
+  });
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    clearErrors();
+
+    var name = nameInput.value.trim();
+    var business = businessInput.value.trim();
+    var phone = phoneInput.value.trim();
+    var chosenNeed = need ? need.value : 'Free homepage concept';
+    var valid = true;
+
+    if (!name) { setInvalid(fieldName, true); valid = false; }
+    if (!business) { setInvalid(fieldBusiness, true); valid = false; }
+    if (!/^[+\d][\d\s-]{7,}$/.test(phone)) { setInvalid(fieldPhone, true); valid = false; }
+
+    if (!valid) {
+      var firstInvalid = form.querySelector('.field.invalid input');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+
+    var message = 'Hi CodeCare Solutions, I\'d like a free homepage concept.\n\n' +
+      'Name: ' + name + '\n' +
+      'Business: ' + business + '\n' +
+      'Phone: ' + phone + '\n' +
+      'Need: ' + chosenNeed + '\n\n' +
+      'Sent from the CodeCare website.';
+    var url = 'mailto:' + MAIL_TO +
+      '?subject=' + encodeURIComponent('Free homepage enquiry — ' + business) +
+      '&body=' + encodeURIComponent(message);
+
+    lastDetails = 'To: ' + MAIL_TO + '\n' +
+      'Subject: Free homepage enquiry — ' + business + '\n\n' + message;
+    successMail.href = url;
+    successName.textContent = name.split(' ')[0] || name;
+    form.hidden = true;
+    success.hidden = false;
+    copyButton.textContent = 'Copy my details';
+    success.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+
+    /* open their mail app; the panel above still works if it does not */
+    window.location.href = url;
+  });
+
+  copyButton.addEventListener('click', function () {
+    if (!lastDetails) return;
+    function done() {
+      copyButton.textContent = 'Copied';
+      setTimeout(function () { copyButton.textContent = 'Copy my details'; }, 2000);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(lastDetails).then(done, done);
+    } else {
+      done();
+    }
+  });
+
+  resetButton.addEventListener('click', function () {
+    form.reset();
+    clearErrors();
+    success.hidden = true;
+    form.hidden = false;
+    nameInput.focus();
+  });
+
+  /* one faq open at a time */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    item.addEventListener('toggle', function () {
+      if (!item.open) return;
+      faqItems.forEach(function (other) {
+        if (other !== item) other.open = false;
+      });
+    });
+  });
+
+  /* footer year */
+  document.getElementById('year').textContent = String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
